@@ -33,3 +33,26 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId);
+
+// *********Memory************
+// Stack(Primitive)  //Heap(Non-Primitive)
+// Stack creates a copy of primitive datatype values
+// Heap uses the same address reference of the Non-Primitive data
+
+let myYouTubeName = "mrigGames"
+
+let anotherName = myYouTubeName
+myYouTubeName = "mrigPlays"
+
+console.log(anotherName);
+console.log(myYouTubeName);
+
+let userOne = {
+    name : "Mriganshu",
+    upi : "21051@mrigbank"
+}
+let userTwo = userOne
+userTwo.name = "Sunny"
+
+console.log(userOne.name);
+console.log(userTwo.name);
